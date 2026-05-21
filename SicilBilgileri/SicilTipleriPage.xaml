@@ -1,0 +1,85 @@
+﻿<Page x:Class="YapıRuhsatOtomasyonu.SicilBilgileri.SicilTipleriPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      d:DesignHeight="850" d:DesignWidth="1300" Background="White" Title="Sicil Tipleri">
+
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox x:Name="Panel1" Grid.Column="0" Width="420" Header="Sicil Tip Detayları" Background="#F5F5F5" Margin="0,0,10,0" BorderBrush="#D0D0D0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid Margin="10,5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="135"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="ID:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtId" Grid.Row="0" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="1" Text="Sicil Tipi:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtSicilTipi" Grid.Row="1" Grid.Column="1" Background="White" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="2" Text="Diğer Bilgiler:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,5,8,8"/>
+                    <TextBox x:Name="txtDigerBilgiler" Grid.Row="2" Grid.Column="1" Height="80" Background="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="3" Text="Açıklama:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,5,8,15"/>
+                    <TextBox x:Name="txtAciklama" Grid.Row="3" Grid.Column="1" Height="80" Background="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,0,0,15" Padding="5"/>
+
+                    <TextBlock Grid.Row="4" Text="Kaydeden Kullanıcı:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtKaydeden" Grid.Row="4" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="5" Text="Kayıt Tarihi:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtKayitTarihi" Grid.Row="5" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="6" Text="Değiştiren Kullanıcı:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtDegistiren" Grid.Row="6" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="7" Text="Değiştirme Tarihi:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtDegistirmeTarihi" Grid.Row="7" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                </Grid>
+            </ScrollViewer>
+        </GroupBox>
+
+        <GroupBox Grid.Column="1" Header="Sicil Tipleri" BorderBrush="#D0D0D0" Margin="0">
+            <DataGrid x:Name="dgSicilTipleri"
+                      SelectionChanged="dgSicilTipleri_SelectionChanged"
+                      AutoGenerateColumns="False" 
+                      IsReadOnly="True" 
+                      CanUserAddRows="False"
+                      CanUserReorderColumns="False" 
+                      CanUserResizeColumns="True"
+                      Background="White" 
+                      AlternatingRowBackground="#FAFAFA"
+                      GridLinesVisibility="All" 
+                      HorizontalGridLinesBrush="#E0E0E0" 
+                      VerticalGridLinesBrush="#E0E0E0"
+                      RowHeight="35" 
+                      ColumnWidth="*">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding SiraNo}" Width="Auto" MinWidth="50"/>
+                    <DataGridTextColumn Header="Sicil Tipi" Binding="{Binding SicilTipi}"/>
+                    <DataGridTextColumn Header="Diğer Bilgiler" Binding="{Binding DigerBilgiler}"/>
+                    <DataGridTextColumn Header="Açıklama" Binding="{Binding Aciklama}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</Page>

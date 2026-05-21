@@ -1,0 +1,219 @@
+﻿<Window x:Class="YapıRuhsatOtomasyonu.Login.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Yapı Ruhsat Otomasyonu" Height="850" Width="1350"
+        WindowStartupLocation="CenterScreen" Background="#F4F7F9">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0" Background="#E1EAF5" BorderBrush="#8CA5C0" BorderThickness="0,1,0,1">
+            <TabItem x:Name="tabYapiBilgileri" Header="Yapı Bilgileri">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button x:Name="BtnYapilar" Click="BtnYapilar_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="Domain" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Yapılar" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnBelgeTipleri" Click="BtnBelgeTipleri_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="95">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="FileDocument" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Belge Tipleri" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnDosyaTipleri" Click="BtnDosyaTipleri_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="95">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="FolderOpen" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Dosya Tipleri" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnRuhsatVerilisAmaclari" Click="BtnRuhsatVerilisAmaclari_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="135">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="Edit" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ruhsat Veriliş Amaçları" Foreground="Black" FontSize="10" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnIskanVerilisAmaclari" Click="BtnIskanVerilisAmaclari_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="135">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="Home" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="İskan Veriliş Amaçları" Foreground="Black" FontSize="10" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem x:Name="tabSicilBilgileri" Header="Sicil Bilgileri">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button x:Name="BtnSiciller" Click="BtnSiciller_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ClipboardAccount" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Siciller" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnSicilTipleri" Click="BtnSicilTipleri_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="95">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="FormatListBulletedType" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Sicil Tipleri" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem x:Name="tabKullaniciBilgileri" Header="Kullanıcı Bilgileri">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button x:Name="BtnKullanicilar" Click="BtnKullanicilar_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="AccountMultiple" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Kullanıcılar" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnUnvanlar" Click="BtnUnvanlar_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="AccountTie" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ünvanlar" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="BtnBirimler" Click="BtnBirimler_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="AccountNetwork" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Birimler" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem x:Name="tabYonetimModulu" Header="Yönetim">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button x:Name="btnAdminPaneli" Click="BtnAdminPaneli_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="85">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ShieldEdit" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Admin Paneli" Foreground="Black" FontSize="10" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Rectangle Width="1" Fill="#A0A0A0" Margin="15,5"/>
+                    <Button x:Name="btnProgramAyarlari" Click="BtnProgramAyarlari_Click" Background="Transparent" BorderThickness="0" Margin="5,0" Height="70" Width="100">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="Cog" Width="34" Height="34" Foreground="#D19C4C" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Program Ayarları" Foreground="Black" FontSize="10" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+        <Border Grid.Row="1" Background="#E9ECF1" BorderBrush="#D0D0D0" BorderThickness="0,0,0,1">
+            <TabControl x:Name="tcPages" Background="Transparent" BorderThickness="0" SelectionChanged="tcPages_SelectionChanged" Height="35">
+                <TabControl.Template>
+                    <ControlTemplate TargetType="TabControl">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="0"/>
+                            </Grid.RowDefinitions>
+                            <UniformGrid Grid.Row="0" Rows="1" IsItemsHost="True" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                            <ContentPresenter Grid.Row="1" ContentSource="SelectedContent" Visibility="Collapsed"/>
+                        </Grid>
+                    </ControlTemplate>
+                </TabControl.Template>
+                <TabControl.Resources>
+                    <Style TargetType="TabItem">
+                        <Setter Property="MinWidth" Value="50"/>
+                        <Setter Property="MaxWidth" Value="180"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TabItem">
+                                    <Border x:Name="Border" Background="#DDE2E8" BorderBrush="#D0D0D0" BorderThickness="1,1,1,0" CornerRadius="5,5,0,0" Margin="1,0">
+                                        <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Header"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="Border" Property="Background" Value="White"/>
+                                            <Setter TargetName="Border" Property="BorderBrush" Value="#D15000"/>
+                                            <Setter TargetName="Border" Property="BorderThickness" Value="1,3,1,0"/>
+                                            <Setter Property="Foreground" Value="#D15000"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.Resources>
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Header}" VerticalAlignment="Center" FontSize="11" FontWeight="SemiBold" Margin="8,0,5,0" TextTrimming="CharacterEllipsis"/>
+                            <Button Grid.Column="1" Content="✕" Click="BtnCloseTab_Click" Background="Transparent" BorderThickness="0" FontSize="10" Padding="2" Margin="0,0,5,0"/>
+                        </Grid>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+            </TabControl>
+        </Border>
+
+        <Border x:Name="IslemPaneli" Grid.Row="2" BorderBrush="#D0D0D0" BorderThickness="0,0,0,1" Background="#E9ECF1" Padding="5,8" Visibility="Collapsed">
+            <StackPanel Orientation="Horizontal">
+                <Button Click="BtnNavigation_Click" Tag="First" Background="Transparent" BorderThickness="0" Margin="5,0">
+                    <materialDesign:PackIcon Kind="SkipPrevious" Width="28" Height="28" Foreground="#808080"/>
+                </Button>
+                <Button Click="BtnNavigation_Click" Tag="Prev" Background="Transparent" BorderThickness="0" Margin="5,0">
+                    <materialDesign:PackIcon Kind="ChevronLeft" Width="28" Height="28" Foreground="#808080"/>
+                </Button>
+                <TextBox x:Name="txtCurrentNav" Text="0" Width="35" TextAlignment="Center" VerticalAlignment="Center" Margin="10,0" Background="White" IsReadOnly="True"/>
+                <TextBlock x:Name="lblTotalNav" Text="/ 0" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <Button Click="BtnNavigation_Click" Tag="Next" Background="Transparent" BorderThickness="0" Margin="5,0">
+                    <materialDesign:PackIcon Kind="ChevronRight" Width="28" Height="28" Foreground="#D15000"/>
+                </Button>
+                <Button Click="BtnNavigation_Click" Tag="Last" Background="Transparent" BorderThickness="0" Margin="5,0">
+                    <materialDesign:PackIcon Kind="SkipNext" Width="30" Height="28" Foreground="#D15000"/>
+                </Button>
+
+                <Button x:Name="BtnEkle" Click="BtnEkle_Click" Background="Transparent" BorderThickness="0" Margin="8,0" Height="60">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Plus" Width="28" Height="28" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Yeni" FontSize="11" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="BtnSil" Click="BtnSil_Click" Background="Transparent" BorderThickness="0" Margin="8,0" Height="60">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Delete" Width="28" Height="28" Foreground="#F44336" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Sil" FontSize="11" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="BtnGuncelle" Click="BtnGuncelle_Click" Background="Transparent" BorderThickness="0" Margin="8,0" Height="60">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="ContentSave" Width="28" Height="28" Foreground="#2196F3" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Kaydet" FontSize="11" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="BtnKapat" Click="BtnKapat_Click" Background="Transparent" BorderThickness="0" Margin="8,0" Height="60">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Close" Width="28" Height="28" Foreground="#757575" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Kapat" FontSize="11" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="3">
+            <Image x:Name="imgCenterLogo" 
+                   Source="/Assets/logo.png" 
+                   Width="450" Height="450" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Opacity="0.4"
+                   Visibility="Visible"/>
+
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="Transparent"/>
+        </Grid>
+    </Grid>
+</Window>

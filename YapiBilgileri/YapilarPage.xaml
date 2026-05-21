@@ -1,0 +1,251 @@
+﻿<Page x:Class="YapıRuhsatOtomasyonu.YapiBilgileri.Yapilar"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      Title="Yapı Kayıt Sistemi" d:DesignHeight="900" d:DesignWidth="1300"
+      Background="#F0F0F0">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox x:Name="Panel1" Grid.Column="0" Width="420" Header="Yapı Detayları" BorderBrush="#C0C0C0" Margin="0,0,10,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="ID:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtId" Grid.Row="0" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="1" Text="Yapı Sahibi:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <ComboBox x:Name="cmbYapiSahibi" Grid.Row="1" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="2" Text="Yapı Kimlik No:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtYapiKimlikNo" Grid.Row="2" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="3" Text="Pafta No:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtPafta" Grid.Row="3" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="4" Text="Ada:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtAda" Grid.Row="4" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="5" Text="Parsel:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtParsel" Grid.Row="5" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="6" Text="Mahalle:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtMahalle" Grid.Row="6" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="7" Text="Cadde:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtCadde" Grid.Row="7" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="8" Text="Sokak:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtSokak" Grid.Row="8" Grid.Column="1" Background="White" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="9" Text="Diğer Bilgiler:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,5,8,10"/>
+                    <TextBox x:Name="txtDigerBilgiler" Grid.Row="9" Grid.Column="1" Height="80" Background="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10" Padding="5"/>
+
+                    <TextBlock Grid.Row="10" Text="Açıklama:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,5,8,10"/>
+                    <TextBox x:Name="txtAciklama" Grid.Row="10" Grid.Column="1" Height="80" Background="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10" Padding="5"/>
+
+                    <TextBlock Grid.Row="11" Text="Kaydeden Kullanıcı:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtKaydeden" Grid.Row="11" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="12" Text="Kayıt Tarihi:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtKayitTarihi" Grid.Row="12" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="13" Text="Değiştiren Kullanıcı:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtDegistiren" Grid.Row="13" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+
+                    <TextBlock Grid.Row="14" Text="Değiştirilme Tarihi:" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,8"/>
+                    <TextBox x:Name="txtDegistirmeTarihi" Grid.Row="14" Grid.Column="1" IsReadOnly="True" Background="#E0E0E0" Margin="0,0,0,8" Padding="5"/>
+                </Grid>
+            </ScrollViewer>
+        </GroupBox>
+
+        <GroupBox Grid.Column="1" Header="Yapılar, Belgeler ve Dosyalar" BorderBrush="#C0C0C0" Margin="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="spIslemButonlari" Grid.Row="0" Orientation="Horizontal" Margin="5,5,5,15">
+                    <Button x:Name="btnYapininBelgeleri" Click="BtnYapininBelgeleri_Click" Background="#673AB7" Foreground="White" BorderThickness="0" Height="40" Padding="15,0" Margin="0,0,12,0" Cursor="Hand" materialDesign:ButtonAssist.CornerRadius="5">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="FileDocumentMultipleOutline" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                            <TextBlock Text="Yapıya Ait Belgeler" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="btnYapininDosyalari" Click="BtnYapininDosyalari_Click" Background="#FF9800" Foreground="White" BorderThickness="0" Height="40" Padding="15,0" Cursor="Hand" materialDesign:ButtonAssist.CornerRadius="5">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="FolderZipOutline" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                            <TextBlock Text="Yapıya Ait Dosyalar" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <DataGrid x:Name="dgYapilar" Grid.Row="1" SelectionChanged="dgYapilar_SelectionChanged"
+                          AutoGenerateColumns="False" IsReadOnly="True" CanUserReorderColumns="False" 
+                          Background="White" AlternatingRowBackground="#F9F9F9" 
+                          GridLinesVisibility="All" HorizontalGridLinesBrush="#E0E0E0" VerticalGridLinesBrush="#E0E0E0" 
+                          RowHeight="45" HorizontalAlignment="Stretch"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                            <Setter Property="Height" Value="65"/>
+                            <Setter Property="Padding" Value="4"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding SiraNo}" Width="Auto" MinWidth="55">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="ID" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBox x:Name="txtFiltreId" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding YapiSahibi}" Width="2*" MinWidth="130">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Yapı Sahibi" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreYapiSahibi" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding YapiKimlikNo}" Width="1.5*" MinWidth="110">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Yapı Kimlik No" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreYapiKimlikNo" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding PaftaNo}" Width="*" MinWidth="80">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Pafta No" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltrePafta" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Ada}" Width="*" MinWidth="80">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Ada" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreAda" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Parsel}" Width="*" MinWidth="80">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Parsel" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreParsel" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Mahalle}" Width="1.5*" MinWidth="110">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Mahalle" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreMahalle" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Cadde}" Width="1.5*" MinWidth="110">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Cadde" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreCadde" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Sokak}" Width="1.5*" MinWidth="110">
+                            <DataGridTextColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,2">
+                                        <TextBlock Text="Sokak" FontWeight="Bold"/>
+                                        <TextBox x:Name="txtFiltreSokak" TextChanged="txtFiltre_TextChanged" Height="22" Margin="0,2,0,0" FontSize="11" Padding="2,0" Background="White" BorderBrush="#B0B0B0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTextColumn.HeaderTemplate>
+                        </DataGridTextColumn>
+
+                        <DataGridTemplateColumn Header="Belge Ekle" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="BtnBelgeEkle_Click" Background="Transparent" BorderThickness="0" Cursor="Hand" Padding="5" ToolTip="Yapıya Yeni Belge Ekle" VerticalAlignment="Center">
+                                        <materialDesign:PackIcon Kind="FilePlusOutline" Foreground="#2E7D32" Width="24" Height="24" HorizontalAlignment="Center"/>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Dosya Ekle" Width="90">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="BtnDosyaEkle_Click" Background="Transparent" BorderThickness="0" Cursor="Hand" Padding="0" VerticalAlignment="Center">
+                                        <materialDesign:PackIcon Kind="FolderPlusOutline" Foreground="#FF9800" Width="22" Height="22" HorizontalAlignment="Center"/>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Page>
