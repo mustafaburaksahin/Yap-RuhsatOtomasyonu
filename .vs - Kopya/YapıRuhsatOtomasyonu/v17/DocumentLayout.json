@@ -1,0 +1,1244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\yapilarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\yapilarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyalistesi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyalistesi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yonetim\\adminpaneli.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yonetim\\adminpaneli.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgelistesi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgelistesi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgelistesi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgelistesi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\sicilbilgileri\\sicilpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:sicilbilgileri\\sicilpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\sicilbilgileri\\sicilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:sicilbilgileri\\sicilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\birimler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\birimler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\unvan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\unvan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\unvan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\unvan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgedetay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgedetay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\sicilbilgileri\\siciltipleripage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:sicilbilgileri\\siciltipleripage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\birimler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\birimler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\kulllanicilar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\kulllanicilar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\kullanicibilgileri\\kulllanicilar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:kullanicibilgileri\\kulllanicilar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgedetay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgedetay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\sicilbilgileri\\siciltipleripage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:sicilbilgileri\\siciltipleripage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\ruhsatpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\ruhsatpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\ruhsatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\ruhsatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\iskanpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\iskanpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\iskanpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\iskanpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyadetay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyadetay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\belgepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\belgepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyalistesi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyalistesi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\yapilarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\yapilarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yapibilgileri\\dosyadetay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yapibilgileri\\dosyadetay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\login\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:login\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\login\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:login\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260520133348_modelk\u0131sm\u0131nadegistirenkullan\u0131c\u0131eklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260520133348_modelk\u0131sm\u0131nadegistirenkullan\u0131c\u0131eklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\login\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:login\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260520123458_siciltipimodeldegistirenkullan\u0131c\u0131eklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260520123458_siciltipimodeldegistirenkullan\u0131c\u0131eklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yonetim\\adminpaneli.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yonetim\\adminpaneli.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yap\u0131ruhsatotomasyonu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yap\u0131ruhsatotomasyonu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yap\u0131ruhsatotomasyonu1.iss||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yap\u0131ruhsatotomasyonu1.iss||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yonetim\\program.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yonetim\\program.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yap\u0131ruhsatotomasyonu.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yap\u0131ruhsatotomasyonu.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\a9f5de9bcfa7275e7e930ada29bb344da353f971b5a9bc90dbfe86affd6d9912\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\login\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:login\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\yonetim\\program.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:yonetim\\program.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260511152856_dosyadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260511152856_dosyadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\0998624e5f6b9a551ce2ef85d863eeea259599b91632e052cc1b116816473f35\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\27c00f9f7d80cd7fe818352959a51a1eeee30b7d30da2d511bb4069cd30e1b7e\\Panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260506062006_songuncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260506062006_songuncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260505122714_yetkisistemieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260505122714_yetkisistemieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260505085056_ilkkurulum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260505085056_ilkkurulum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260505111105_yapitablosuolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260505111105_yapitablosuolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260505114640_sonmodelguncellemesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260505114640_sonmodelguncellemesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260506112626_sicilbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260506112626_sicilbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260506111623_yap\u0131bilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260506111623_yap\u0131bilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260507073736_belgeekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260507073736_belgeekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260507070447_dosyaekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260507070447_dosyaekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260507131225_dosyadetaytablosuekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260507131225_dosyadetaytablosuekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260508111647_gunceldosyadetaytablosu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260508111647_gunceldosyadetaytablosu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260510144223_belgedetaytablosueklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260510144223_belgedetaytablosueklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260511072508_addyetkicolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260511072508_addyetkicolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260511075132_adminpanelig\u00FCncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260511075132_adminpanelig\u00FCncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260511174037_dosyatipidetaysayfas\u0131naeklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260511174037_dosyatipidetaysayfas\u0131naeklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260512135611_resetdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260512135611_resetdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260513061150_siciltiplerid\u00FCzenleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260513061150_siciltiplerid\u00FCzenleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260514073429_sistemayarlarieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260514073429_sistemayarlarieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260514131258_paftanoeklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260514131258_paftanoeklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260518112142_modeliskonveyetkiguncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260518112142_modeliskonveyetkiguncelleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260518105158_modelsduzenleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260518105158_modelsduzenleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260519091554_kolonduzeltme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260519091554_kolonduzeltme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|c:\\users\\user\\onedrive\\masa\u00FCst\u00FC\\yap\u0131ruhsatotomasyonu\\migrations\\20260520134318_degistirmetarihieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825E4BE9-18F7-452E-93EF-C4D9E79B80DD}|Yap\u0131RuhsatOtomasyonu.csproj|solutionrelative:migrations\\20260520134318_degistirmetarihieklendi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Kulllanicilar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Kulllanicilar.xaml.cs",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Kulllanicilar.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Kulllanicilar.xaml.cs",
+              "RelativeToolTip": "KullaniciBilgileri\\Kulllanicilar.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAASwDoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T07:54:03.761Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Birimler.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Birimler.xaml.cs",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Birimler.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Birimler.xaml.cs",
+              "RelativeToolTip": "KullaniciBilgileri\\Birimler.xaml.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAswMcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:40:24.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SicilPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilPage.xaml.cs",
+              "RelativeDocumentMoniker": "SicilBilgileri\\SicilPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilPage.xaml.cs",
+              "RelativeToolTip": "SicilBilgileri\\SicilPage.xaml.cs",
+              "ViewState": "AgIAAFABAAAAAAAAAAAswFYBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T20:06:24.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SicilPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilPage.xaml",
+              "RelativeDocumentMoniker": "SicilBilgileri\\SicilPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilPage.xaml",
+              "RelativeToolTip": "SicilBilgileri\\SicilPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T20:00:36.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BelgeListesi.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeListesi.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgeListesi.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeListesi.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\BelgeListesi.xaml.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwEwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T16:11:11.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BelgeListesi.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeListesi.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgeListesi.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeListesi.xaml",
+              "RelativeToolTip": "YapiBilgileri\\BelgeListesi.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-10T16:10:07.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YapilarPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\YapilarPage.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\YapilarPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\YapilarPage.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\YapilarPage.xaml.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAwwGwBAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:26:44.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Birimler.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Birimler.xaml",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Birimler.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Birimler.xaml",
+              "RelativeToolTip": "KullaniciBilgileri\\Birimler.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T11:39:02.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPaneli.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\AdminPaneli.xaml.cs",
+              "RelativeDocumentMoniker": "Yonetim\\AdminPaneli.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\AdminPaneli.xaml.cs",
+              "RelativeToolTip": "Yonetim\\AdminPaneli.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAOoAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T06:48:58.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DosyaListesi.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaListesi.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaListesi.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaListesi.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\DosyaListesi.xaml.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAmwNsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T17:07:10.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Unvan.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Unvan.xaml.cs",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Unvan.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Unvan.xaml.cs",
+              "RelativeToolTip": "KullaniciBilgileri\\Unvan.xaml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAIwG8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:33:14.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BelgeDetay.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeDetay.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgeDetay.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeDetay.xaml",
+              "RelativeToolTip": "YapiBilgileri\\BelgeDetay.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-08T13:18:33.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Unvan.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Unvan.xaml",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Unvan.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Unvan.xaml",
+              "RelativeToolTip": "KullaniciBilgileri\\Unvan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T11:32:22.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IskanPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\IskanPage.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\IskanPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\IskanPage.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\IskanPage.xaml.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAAM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T19:32:39.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Kulllanicilar.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Kulllanicilar.xaml",
+              "RelativeDocumentMoniker": "KullaniciBilgileri\\Kulllanicilar.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\KullaniciBilgileri\\Kulllanicilar.xaml",
+              "RelativeToolTip": "KullaniciBilgileri\\Kulllanicilar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T07:51:45.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BelgeDetay.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeDetay.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgeDetay.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgeDetay.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\BelgeDetay.xaml.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAcwOYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T13:18:54.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SicilTipleriPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilTipleriPage.xaml",
+              "RelativeDocumentMoniker": "SicilBilgileri\\SicilTipleriPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilTipleriPage.xaml",
+              "RelativeToolTip": "SicilBilgileri\\SicilTipleriPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T06:23:51.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SicilTipleriPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilTipleriPage.xaml.cs",
+              "RelativeDocumentMoniker": "SicilBilgileri\\SicilTipleriPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\SicilBilgileri\\SicilTipleriPage.xaml.cs",
+              "RelativeToolTip": "SicilBilgileri\\SicilTipleriPage.xaml.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAIwMAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:24:27.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RuhsatPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\RuhsatPage.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\RuhsatPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\RuhsatPage.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\RuhsatPage.xaml.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAwwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T18:50:08.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RuhsatPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\RuhsatPage.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\RuhsatPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\RuhsatPage.xaml",
+              "RelativeToolTip": "YapiBilgileri\\RuhsatPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T18:48:07.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IskanPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\IskanPage.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\IskanPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\IskanPage.xaml",
+              "RelativeToolTip": "YapiBilgileri\\IskanPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T19:32:08.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Main.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Main.xaml.cs",
+              "RelativeDocumentMoniker": "Login\\Main.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Main.xaml.cs",
+              "RelativeToolTip": "Login\\Main.xaml.cs",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAkwHgBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T06:55:03.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DosyaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaPage.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaPage.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\DosyaPage.xaml.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAwwMsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T18:26:02.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DosyaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaPage.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaPage.xaml",
+              "RelativeToolTip": "YapiBilgileri\\DosyaPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T18:22:39.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DosyaDetay.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaDetay.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaDetay.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaDetay.xaml",
+              "RelativeToolTip": "YapiBilgileri\\DosyaDetay.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-07T11:31:58.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BelgePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgePage.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgePage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgePage.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\BelgePage.xaml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:49:07.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BelgePage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgePage.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\BelgePage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\BelgePage.xaml",
+              "RelativeToolTip": "YapiBilgileri\\BelgePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T13:48:38.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Models\\Models.cs",
+              "RelativeDocumentMoniker": "Models\\Models.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Models\\Models.cs",
+              "RelativeToolTip": "Models\\Models.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAIA4wFkBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:10:59.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DosyaListesi.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaListesi.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaListesi.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaListesi.xaml",
+              "RelativeToolTip": "YapiBilgileri\\DosyaListesi.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-10T17:06:44.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "YapilarPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\YapilarPage.xaml",
+              "RelativeDocumentMoniker": "YapiBilgileri\\YapilarPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\YapilarPage.xaml",
+              "RelativeToolTip": "YapiBilgileri\\YapilarPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T13:16:15.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DosyaDetay.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaDetay.xaml.cs",
+              "RelativeDocumentMoniker": "YapiBilgileri\\DosyaDetay.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\YapiBilgileri\\DosyaDetay.xaml.cs",
+              "RelativeToolTip": "YapiBilgileri\\DosyaDetay.xaml.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAqwJgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T11:33:14.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20260520134318_DegistirmeTarihiEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520134318_DegistirmeTarihiEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260520134318_DegistirmeTarihiEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520134318_DegistirmeTarihiEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260520134318_DegistirmeTarihiEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:43:18.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Main.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Main.xaml",
+              "RelativeDocumentMoniker": "Login\\Main.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Main.xaml",
+              "RelativeToolTip": "Login\\Main.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T06:32:08.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20260520133348_Modelk\u0131sm\u0131naDegistirenkullan\u0131c\u0131Eklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520133348_Modelk\u0131sm\u0131naDegistirenkullan\u0131c\u0131Eklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260520133348_Modelk\u0131sm\u0131naDegistirenkullan\u0131c\u0131Eklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520133348_Modelk\u0131sm\u0131naDegistirenkullan\u0131c\u0131Eklendi.cs",
+              "RelativeToolTip": "Migrations\\20260520133348_Modelk\u0131sm\u0131naDegistirenkullan\u0131c\u0131Eklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:33:50.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Login\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Login.xaml.cs",
+              "RelativeToolTip": "Login\\Login.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwF4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T06:24:59.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20260520123458_SicilTipiModelDegistirenKullan\u0131c\u0131Eklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520123458_SicilTipiModelDegistirenKullan\u0131c\u0131Eklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260520123458_SicilTipiModelDegistirenKullan\u0131c\u0131Eklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260520123458_SicilTipiModelDegistirenKullan\u0131c\u0131Eklendi.cs",
+              "RelativeToolTip": "Migrations\\20260520123458_SicilTipiModelDegistirenKullan\u0131c\u0131Eklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T12:35:00.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowCgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T06:15:20.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwBoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:43:03.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AdminPaneli.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\AdminPaneli.xaml",
+              "RelativeDocumentMoniker": "Yonetim\\AdminPaneli.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\AdminPaneli.xaml",
+              "RelativeToolTip": "Yonetim\\AdminPaneli.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T06:48:35.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Yap\u0131RuhsatOtomasyonu.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu.csproj",
+              "RelativeDocumentMoniker": "Yap\u0131RuhsatOtomasyonu.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu.csproj",
+              "RelativeToolTip": "Yap\u0131RuhsatOtomasyonu.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-14T13:49:44.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20260519091554_KolonDuzeltme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260519091554_KolonDuzeltme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260519091554_KolonDuzeltme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260519091554_KolonDuzeltme.cs",
+              "RelativeToolTip": "Migrations\\20260519091554_KolonDuzeltme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T09:15:54.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Yap\u0131RuhsatOtomasyonu1.iss",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu1.iss",
+              "RelativeDocumentMoniker": "Yap\u0131RuhsatOtomasyonu1.iss",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu1.iss",
+              "RelativeToolTip": "Yap\u0131RuhsatOtomasyonu1.iss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALiSURBVDhPhZNtaJVlGMd/9/2c85xztnbcy1G33EtORM9aL04wbbTGIg0jJNAsilH5EroPK/oSCEEvow/Wp4hQckiBRq5IMFj5QbJUKALHRGVWnhgOoTPb1tkO53me\u002B7r6cJxsFPSDG264r\u002BvHdd/cf8MCDh79RkUUVUUXHtzGGkNQmsNa\u002B8yBV7afQHVx2XtHTur/MXD4S33n4xM6cGjoWQC7UGBEAJgqFBkdn2YiX0DFIaJEopRCRxCEbOhoR1SPDxwa2hFbKPhrZoa3zk4yMum4\u002Bbdj5HqR\u002BsINPngqw9bOtYgCqpz/eYSE7\u002BPEfeHNN9d0v/x0wxO9O3uyGR5bmaQ546NVcX6a9Tk\u002BdJZMlKfj3lVsXNfGpo4sXevb\u002BPGXy\u002BUr2OVZb/mWfZ93ZhvorI/TURenNR2jqcpjybIKaG3h1Y9OMvbrH4ROCAJHKXK4KCoLpLa9L1F/j99QAYXAMV5wTBaF6UCZK0XcXWtpWrOC9wePEYSOUJQwUkQc5Tfw7upamgq5ORsxNhWR8Ay5GcfFfMj2ZsOne3qAHo4Nn6EUhFgvRswqTqQsqKsLa3atS9J3bppVNQl8a7gx68hN/EkxyHG\u002BVXh4dSNWIXSKUUfcs6gKMZNKx9/tf6H7ypXfuXVtjlvVdWAMFKa4P13gyPMbkLlpfhi9Sn6mQCSKUSVygjqHVWXbji2P2r2PrObJ9AQb5Sr7VuS50NvCyOuPk/ttjIee62fwq2GW1i7DqSF0ghNFVInhosuj13J0P7CWU2/svPMnLl0fZ3Pfm5w\u002BfQ6CIpva7yO7po0gchgoC1x5T2XDyoEXd\u002B/ub2luqUzXZvj61HcMf/s9qepqutY/yP69L9HU2IgTQUQwxrCk0ufw4GdlwTz7DxzU3l170NuF1lqs9ZD5xjvZKQs\u002BGTy6OAvJZIp00ied9KmuSJJO\u002BlT6HlWJGOmUT9X8qvDBWEAXT/Da2x\u002BqiPwrpf\u002BFMQZrLf8AHQ1sZT8io14AAAAASUVORK5CYII=",
+              "WhenOpened": "2026-05-18T14:02:06.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20260518112142_ModelIskonveYetkiGuncelleme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260518112142_ModelIskonveYetkiGuncelleme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260518112142_ModelIskonveYetkiGuncelleme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260518112142_ModelIskonveYetkiGuncelleme.cs",
+              "RelativeToolTip": "Migrations\\20260518112142_ModelIskonveYetkiGuncelleme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:21:42.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20260518105158_ModelsDuzenleme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260518105158_ModelsDuzenleme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260518105158_ModelsDuzenleme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260518105158_ModelsDuzenleme.cs",
+              "RelativeToolTip": "Migrations\\20260518105158_ModelsDuzenleme.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAgwDUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T10:51:59.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\Program.xaml.cs",
+              "RelativeDocumentMoniker": "Yonetim\\Program.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\Program.xaml.cs",
+              "RelativeToolTip": "Yonetim\\Program.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T07:12:38.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Yap\u0131RuhsatOtomasyonu",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu.csproj",
+              "RelativeDocumentMoniker": "Yap\u0131RuhsatOtomasyonu.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yap\u0131RuhsatOtomasyonu.csproj",
+              "RelativeToolTip": "Yap\u0131RuhsatOtomasyonu.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-17T15:27:06.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T20:33:55.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T06:15:17.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T06:12:36.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-17T15:00:42.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-03T20:33:55.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\a9f5de9bcfa7275e7e930ada29bb344da353f971b5a9bc90dbfe86affd6d9912\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a9f5de9bcfa7275e7e930ada29bb344da353f971b5a9bc90dbfe86affd6d9912\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\a9f5de9bcfa7275e7e930ada29bb344da353f971b5a9bc90dbfe86affd6d9912\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a9f5de9bcfa7275e7e930ada29bb344da353f971b5a9bc90dbfe86affd6d9912\\XamlReader.cs",
+              "ViewState": "AgIAAJIBAAAAAAAAAAD4v6MBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T08:21:12.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Login.xaml",
+              "RelativeDocumentMoniker": "Login\\Login.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Login\\Login.xaml",
+              "RelativeToolTip": "Login\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-04T06:20:22.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Program.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\Program.xaml",
+              "RelativeDocumentMoniker": "Yonetim\\Program.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Yonetim\\Program.xaml",
+              "RelativeToolTip": "Yonetim\\Program.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-06T06:15:43.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20260514131258_PaftaNoEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260514131258_PaftaNoEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260514131258_PaftaNoEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260514131258_PaftaNoEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260514131258_PaftaNoEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T13:12:58.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20260511174037_DosyaTipiDetaySayfas\u0131naEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511174037_DosyaTipiDetaySayfas\u0131naEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260511174037_DosyaTipiDetaySayfas\u0131naEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511174037_DosyaTipiDetaySayfas\u0131naEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260511174037_DosyaTipiDetaySayfas\u0131naEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T17:40:37.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20260511152856_DosyaDetay.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511152856_DosyaDetay.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260511152856_DosyaDetay.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511152856_DosyaDetay.cs",
+              "RelativeToolTip": "Migrations\\20260511152856_DosyaDetay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T15:28:56.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20260511072508_AddYetkiColumns.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511072508_AddYetkiColumns.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260511072508_AddYetkiColumns.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511072508_AddYetkiColumns.cs",
+              "RelativeToolTip": "Migrations\\20260511072508_AddYetkiColumns.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:25:09.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20260511075132_AdminPaneliG\u00FCncelleme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511075132_AdminPaneliG\u00FCncelleme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260511075132_AdminPaneliG\u00FCncelleme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260511075132_AdminPaneliG\u00FCncelleme.cs",
+              "RelativeToolTip": "Migrations\\20260511075132_AdminPaneliG\u00FCncelleme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:51:33.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20260510144223_BelgeDetayTablosuEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260510144223_BelgeDetayTablosuEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260510144223_BelgeDetayTablosuEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260510144223_BelgeDetayTablosuEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260510144223_BelgeDetayTablosuEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T14:42:23.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20260508111647_GuncelDosyaDetayTablosu.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260508111647_GuncelDosyaDetayTablosu.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260508111647_GuncelDosyaDetayTablosu.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260508111647_GuncelDosyaDetayTablosu.cs",
+              "RelativeToolTip": "Migrations\\20260508111647_GuncelDosyaDetayTablosu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:16:47.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20260514073429_SistemAyarlariEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260514073429_SistemAyarlariEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260514073429_SistemAyarlariEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260514073429_SistemAyarlariEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260514073429_SistemAyarlariEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T07:34:29.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20260513061150_SicilTipleriD\u00FCzenleme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260513061150_SicilTipleriD\u00FCzenleme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260513061150_SicilTipleriD\u00FCzenleme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260513061150_SicilTipleriD\u00FCzenleme.cs",
+              "RelativeToolTip": "Migrations\\20260513061150_SicilTipleriD\u00FCzenleme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T06:11:50.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20260512135611_ResetDB.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260512135611_ResetDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260512135611_ResetDB.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260512135611_ResetDB.cs",
+              "RelativeToolTip": "Migrations\\20260512135611_ResetDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:56:11.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20260507131225_DosyaDetayTablosuEkle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507131225_DosyaDetayTablosuEkle.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260507131225_DosyaDetayTablosuEkle.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507131225_DosyaDetayTablosuEkle.cs",
+              "RelativeToolTip": "Migrations\\20260507131225_DosyaDetayTablosuEkle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T13:12:25.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\0998624e5f6b9a551ce2ef85d863eeea259599b91632e052cc1b116816473f35\\NavigationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0998624e5f6b9a551ce2ef85d863eeea259599b91632e052cc1b116816473f35\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\0998624e5f6b9a551ce2ef85d863eeea259599b91632e052cc1b116816473f35\\NavigationService.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0998624e5f6b9a551ce2ef85d863eeea259599b91632e052cc1b116816473f35\\NavigationService.cs",
+              "ViewState": "AgIAAAAEAAAAAAAAAAAkwB0EAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:02:43.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20260507073736_BelgeEkle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507073736_BelgeEkle.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260507073736_BelgeEkle.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507073736_BelgeEkle.cs",
+              "RelativeToolTip": "Migrations\\20260507073736_BelgeEkle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T07:37:37.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Panel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\27c00f9f7d80cd7fe818352959a51a1eeee30b7d30da2d511bb4069cd30e1b7e\\Panel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\27c00f9f7d80cd7fe818352959a51a1eeee30b7d30da2d511bb4069cd30e1b7e\\Panel.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\27c00f9f7d80cd7fe818352959a51a1eeee30b7d30da2d511bb4069cd30e1b7e\\Panel.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\27c00f9f7d80cd7fe818352959a51a1eeee30b7d30da2d511bb4069cd30e1b7e\\Panel.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAmwIMBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:17:48.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20260507070447_DosyaEkle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507070447_DosyaEkle.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260507070447_DosyaEkle.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260507070447_DosyaEkle.cs",
+              "RelativeToolTip": "Migrations\\20260507070447_DosyaEkle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T07:04:47.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20260506112626_SicilBilgileri.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506112626_SicilBilgileri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260506112626_SicilBilgileri.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506112626_SicilBilgileri.cs",
+              "RelativeToolTip": "Migrations\\20260506112626_SicilBilgileri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:26:26.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20260506111623_Yap\u0131Bilgileri.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506111623_Yap\u0131Bilgileri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260506111623_Yap\u0131Bilgileri.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506111623_Yap\u0131Bilgileri.cs",
+              "RelativeToolTip": "Migrations\\20260506111623_Yap\u0131Bilgileri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:16:23.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20260506062006_SonGuncelleme.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506062006_SonGuncelleme.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260506062006_SonGuncelleme.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260506062006_SonGuncelleme.cs",
+              "RelativeToolTip": "Migrations\\20260506062006_SonGuncelleme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T06:20:09.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20260505111105_YapiTablosuOlustur.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505111105_YapiTablosuOlustur.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260505111105_YapiTablosuOlustur.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505111105_YapiTablosuOlustur.cs",
+              "RelativeToolTip": "Migrations\\20260505111105_YapiTablosuOlustur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:11:05.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20260505122714_YetkiSistemiEklendi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505122714_YetkiSistemiEklendi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260505122714_YetkiSistemiEklendi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505122714_YetkiSistemiEklendi.cs",
+              "RelativeToolTip": "Migrations\\20260505122714_YetkiSistemiEklendi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T12:27:16.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20260505114640_SonModelGuncellemesi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505114640_SonModelGuncellemesi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260505114640_SonModelGuncellemesi.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505114640_SonModelGuncellemesi.cs",
+              "RelativeToolTip": "Migrations\\20260505114640_SonModelGuncellemesi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:46:40.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20260505085056_IlkKurulum.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505085056_IlkKurulum.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260505085056_IlkKurulum.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Masa\u00FCst\u00FC\\Yap\u0131RuhsatOtomasyonu\\Migrations\\20260505085056_IlkKurulum.cs",
+              "RelativeToolTip": "Migrations\\20260505085056_IlkKurulum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:50:57.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBpwCcAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T06:41:50.437Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

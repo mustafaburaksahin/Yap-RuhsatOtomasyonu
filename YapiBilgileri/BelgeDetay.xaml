@@ -1,0 +1,291 @@
+﻿<Window x:Class="YapıRuhsatOtomasyonu.Pages.BelgeDetay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Belge Detayları" Height="850" Width="1250"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterOwner">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,0,10,12"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+        <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignComboBox}">
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+    </Window.Resources>
+
+    <Border Background="White" CornerRadius="10" BorderBrush="#BCBCBC" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="#F0F0F0" Padding="10,5" BorderBrush="#DDD" BorderThickness="0,0,0,1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Click="BtnKaydet_Click" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#2E7D32">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ContentSave" VerticalAlignment="Center"/>
+                            <TextBlock Text=" KAYDET" FontWeight="Bold" Margin="5,0,0,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Click="BtnKapat_Click" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#C62828">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Close" VerticalAlignment="Center"/>
+                            <TextBlock Text=" KAPAT" FontWeight="Bold" Margin="5,0,0,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="420"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Background="#F9F9F9" BorderBrush="#DDD" BorderThickness="0,0,1,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Border Grid.Row="0" Background="#673AB7" Padding="10">
+                            <TextBlock Text="Belge Detayları" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="0"/>
+                        </Border>
+
+                        <ScrollViewer Grid.Row="1" Padding="15">
+                            <StackPanel Grid.IsSharedSizeScope="True">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Id:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtId" IsReadOnly="True" Background="#EEE"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Yapı Sahibi:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtYapiSahibi" IsReadOnly="True" Background="#EEE"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Ruhsat No:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtRuhsatNo"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Yapı Kimlik No:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtYapiKimlikNo"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Ruhsat Bilgileri:" VerticalAlignment="Top"/>
+                                    <TextBox Grid.Column="1" x:Name="txtRuhsatBilgileri" Height="60" TextWrapping="Wrap" AcceptsReturn="True"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Ruhsat Veriliş:"/>
+                                    <ComboBox Grid.Column="1" x:Name="cmbRuhsatVerilis"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Ruhsat Tarihi:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtRuhsatTarihi" ToolTip="GG.AA.YYYY"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Parselin Alanı:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtParselAlani"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="İnşaat Harcı:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtInsaatHarci"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Yapı Denetim:"/>
+                                    <ComboBox Grid.Column="1" x:Name="cmbYapiDenetim" IsEditable="False"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Şantiye Şefi:"/>
+                                    <ComboBox Grid.Column="1" x:Name="cmbSantiyeSefi" IsEditable="False"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Müteahhit:"/>
+                                    <ComboBox Grid.Column="1" x:Name="cmbMuteahhit" IsEditable="False"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="İskan Amacı:"/>
+                                    <ComboBox Grid.Column="1" x:Name="cmbIskanAmaci"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="İskan Tarihi:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtIskanTarihi"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Esas Ruhsat:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtEsasRuhsat"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="İskan No:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtIskanNo"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Belge:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtBelgeAdi" IsReadOnly="True" Background="#EEE"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Belge Yolu:"/>
+                                    <TextBox Grid.Column="1" x:Name="txtBelgeYolu" IsReadOnly="True" Background="#EEE"/>
+                                </Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="L"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Açıklama:" VerticalAlignment="Top"/>
+                                    <TextBox Grid.Column="1" x:Name="txtAciklama" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0"/>
+                                </Grid>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Background="#607D8B" Padding="10">
+                        <TextBlock Text="Belge Göster" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="0"/>
+                    </Border>
+
+                    <Border Grid.Row="1" Background="#F5F5F5" Margin="10" BorderBrush="#ADB5BD" BorderThickness="1" CornerRadius="3">
+                        <Grid>
+                            <Image x:Name="imgOnizleme" Stretch="Uniform" Visibility="Collapsed" RenderOptions.BitmapScalingMode="HighQuality"/>
+
+                            <wv2:WebView2 x:Name="wbOnizleme" Visibility="Collapsed"/>
+
+                            <StackPanel x:Name="pnlOnizlemeUyari" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Visible">
+                                <TextBlock Text="📄" FontSize="40" Foreground="#CCC" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Önizleme Kullanılamıyor" FontSize="14" FontWeight="SemiBold" Foreground="#999" Margin="0,10,0,0" TextAlignment="Center"/>
+                                <TextBlock Text="Desteklenen bir dosya seçin veya sağdaki butona tıklayın." FontSize="11" Foreground="#AAA" TextAlignment="Center"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Border Grid.Column="2" Background="#F4F4F4" BorderBrush="#DCDCDC" BorderThickness="1,0,0,0">
+                    <StackPanel Margin="0,10" HorizontalAlignment="Center">
+                        <Button x:Name="BtnBelgeListesiAc" Click="BtnBelgeListesiAc_Click" Style="{StaticResource MaterialDesignFlatButton}" Height="75" Width="58" Padding="0" Margin="0,5,0,15" ToolTip="Yapıya Ait Tüm Arşivlenmiş Belgeleri Gör">
+                            <StackPanel VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="FileDocumentMultiple" Width="30" Height="30" Foreground="#37474F" HorizontalAlignment="Center"/>
+                                <TextBlock Text="ARŞİV" FontSize="9" FontWeight="ExtraBold" Foreground="#37474F" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Separator Height="1" Background="#E0E0E0" Margin="10,0,10,15"/>
+
+                        <Button x:Name="BtnDosyaDegistir" Click="BtnDosyaDegistir_Click" Style="{StaticResource MaterialDesignFlatButton}" Height="75" Width="58" Padding="0" Margin="0" ToolTip="Seçili Dosyayı Bilgisayardan Değiştir">
+                            <StackPanel VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="FileEditOutline" Width="30" Height="30" Foreground="#37474F" HorizontalAlignment="Center"/>
+                                <TextBlock Text="DÜZENLE" FontSize="9" FontWeight="ExtraBold" Foreground="#37474F" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

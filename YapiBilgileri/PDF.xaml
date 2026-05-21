@@ -1,0 +1,1349 @@
+﻿<Page x:Class="YapıRuhsatOtomasyonu.YapiBilgileri.PDF"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="PDF" Background="#F5F6FA">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Zoom Butonları için üst alan -->
+            <RowDefinition Height="Auto"/>
+            <!-- PDF İçeriği için kalan alan -->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ZOOM ARAÇ ÇUBUĞU -->
+        <materialDesign:Card Grid.Row="0" Margin="10,10,10,0" UniformCornerRadius="8" Padding="5" Background="White" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Click="BtnZoomOut_Click" Style="{StaticResource MaterialDesignIconForegroundButton}" ToolTip="Uzaklaştır">
+                    <materialDesign:PackIcon Kind="MagnifyMinus" Width="24" Height="24" Foreground="#2C3E50"/>
+                </Button>
+
+                <TextBlock x:Name="txtZoomLevel" Text="%100" FontSize="14" FontWeight="Bold" Foreground="#2C3E50" VerticalAlignment="Center" Margin="10,0" Width="40" TextAlignment="Center"/>
+
+                <Button Click="BtnZoomIn_Click" Style="{StaticResource MaterialDesignIconForegroundButton}" ToolTip="Yakınlaştır">
+                    <materialDesign:PackIcon Kind="MagnifyPlus" Width="24" Height="24" Foreground="#2C3E50"/>
+                </Button>
+
+                <Button Click="BtnZoomReset_Click" Style="{StaticResource MaterialDesignIconForegroundButton}" ToolTip="Sıfırla" Margin="10,0,0,0">
+                    <materialDesign:PackIcon Kind="Restore" Width="24" Height="24" Foreground="#E74C3C"/>
+                </Button>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <!-- KAYDIRILABİLİR PDF İÇERİK ALANI -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid.LayoutTransform>
+                    <ScaleTransform x:Name="pdfScaleTransform" ScaleX="1" ScaleY="1"/>
+                </Grid.LayoutTransform>
+
+                <Viewbox Stretch="Uniform">
+                    <!-- A4 Yatay Form Çerçevesi (Kalın Dış Hat) -->
+                    <Border Width="1120" Height="1415" BorderBrush="Black" BorderThickness="3" Padding="3" Background="White">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <!-- Başlık -->
+                                <RowDefinition Height="Auto"/>
+                                <!-- Panel 1 & 2 -->
+                                <RowDefinition Height="Auto"/>
+                                <!-- Panel 3, 4, 5 -->
+                                <RowDefinition Height="Auto"/>
+                                <!-- Panel 6 & 7 -->
+                                <RowDefinition Height="Auto"/>
+                                <!-- Panel 8 -->
+                                <RowDefinition Height="*"/>
+                                <!-- Panel 9 ve Kalan Boşluk -->
+                            </Grid.RowDefinitions>
+
+                            <!-- ================= BAŞLIK VE BARKOD ALANI ================= -->
+                            <Border Grid.Row="0" BorderBrush="Black" BorderThickness="2" Background="Blue" Padding="5" Margin="0,0,0,4">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="120"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- 1. SOL: KURUM LOGOSU -->
+                                    <Image x:Name="imgKurumLogo" Grid.Column="0" Width="70" Height="70" HorizontalAlignment="Left" Margin="10,0,0,0" Stretch="Uniform"/>
+
+                                    <!-- 2. ORTA: YAZI -->
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                        <TextBlock Text="YAPI RUHSATI" FontSize="26" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Building Licence" FontSize="14" FontStyle="Italic" Foreground="White" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+
+                                    <!-- 3. SAĞ: BARKOD -->
+                                    <Border Grid.Column="2" BorderBrush="White" BorderThickness="1" Background="White" Width="110" Height="60" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                        <TextBlock Text="Barkod/Karekod" FontSize="9" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+
+                            <!-- ================= PANEL 1 & PANEL 2 ================= -->
+                            <Grid Grid.Row="1" Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- PANEL 1 -->
+                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="2,2,1,2" Padding="4">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <!-- Ruhsat Veren Kurum -->
+                                            <RowDefinition Height="Auto"/>
+                                            <!-- Ayırıcı Çizgi -->
+                                            <RowDefinition Height="Auto"/>
+                                            <!-- Adres Başlığı -->
+                                            <RowDefinition Height="*"/>
+                                            <!-- Adres Formu -->
+                                            <RowDefinition Height="Auto"/>
+                                            <!-- Alt Tablo -->
+                                        </Grid.RowDefinitions>
+
+                                        <!-- 1. Bölüm: Ruhsat Veren Kurum -->
+                                        <StackPanel Grid.Row="0" Margin="0,0,0,5">
+                                            <TextBlock Text="1. Ruhsat veren kurum" FontSize="8" FontWeight="Bold" Foreground="#000080"/>
+                                            <TextBlock x:Name="txtRuhsatVerenKurum" Text="................................................................................................................................................................................................................................................................" FontSize="8" Margin="0,2,0,2"/>
+                                        </StackPanel>
+
+                                        <!-- Araya İnce Ayırıcı Çizgi -->
+                                        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="0,1,0,0" Margin="0,5,0,5"/>
+
+                                        <!-- 2. Bölüm Başlığı -->
+                                        <TextBlock Grid.Row="2" Text="2. Ruhsat verilen yapının adresi" FontSize="8" FontWeight="Bold" Margin="0,0,0,5" Foreground="#000080"/>
+
+                                        <!-- ADRES HİZALAMA IZGARASI (Ferahlatılmış ve Hizalanmış) -->
+                                        <Grid Grid.Row="3" Margin="0,5,0,15" ClipToBounds="True">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <!-- Satır 1: İl / İlçe -->
+                                            <Grid Grid.Row="0" Margin="0,10,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="İl: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,10,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtIl}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <!-- Kullanıcı dokunamasın diye IsReadOnly, Focusable ve Cursor özellikleri eklendi -->
+                                                    <TextBox x:Name="txtIl" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center" IsReadOnly="True" Focusable="False" Cursor="Arrow"/>
+                                                </Grid>
+
+                                                <TextBlock Grid.Column="2" Text="İlçe: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="3" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtIlce}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <!-- Kullanıcı dokunamasın diye IsReadOnly, Focusable ve Cursor özellikleri eklendi -->
+                                                    <TextBox x:Name="txtIlce" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center" IsReadOnly="True" Focusable="False" Cursor="Arrow"/>
+                                                </Grid>
+                                            </Grid>
+
+                                            <!-- Satır 2: Köy -->
+                                            <Grid Grid.Row="1" Margin="0,12,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="Köy: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text="................................................................................................................................................................................................................................" FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtKoy}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtKoy" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+                                            </Grid>
+
+                                            <!-- Satır 3: Mahalle / Mahalle Tanıtım Kodu -->
+                                            <Grid Grid.Row="2" Margin="0,12,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="Mahalle/Mevki: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,10,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtMahalle}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtMahalle" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+
+                                                <TextBlock Grid.Column="2" Text="Mahalle tanıtım kodu: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="3" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtMahalleKodu}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtMahalleKodu" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+                                            </Grid>
+
+                                            <!-- Satır 4: Cadde Adı -->
+                                            <Grid Grid.Row="3" Margin="0,12,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="Cadde/Sokak/Bulvar/Meydan/Küme adı: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text="................................................................................................................................................................................................................................" FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtCaddeSokak}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtCaddeSokak" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+                                            </Grid>
+
+                                            <!-- Satır 5: Cadde Kodu / Kapı No -->
+                                            <Grid Grid.Row="4" Margin="0,12,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="Cadde/Sokak/Bulvar/Meydan tanıtım kodu: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,10,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtCaddeKodu}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtCaddeKodu" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+
+                                                <TextBlock Grid.Column="2" Text="Dış kapı no: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="3" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text=".................................................................................." FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtDisKapiNo}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtDisKapiNo" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+                                            </Grid>
+
+                                            <!-- Satır 6: Site Adı -->
+                                            <Grid Grid.Row="5" Margin="0,12,0,0" VerticalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" Text="Site adı: " FontSize="8" FontWeight="Bold" Foreground="#000080" VerticalAlignment="Center"/>
+                                                <Grid Grid.Column="1" Margin="2,0,0,0" VerticalAlignment="Center">
+                                                    <TextBlock Text="................................................................................................................................................................................................................................" FontSize="8" VerticalAlignment="Center" Foreground="Black">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Text, ElementName=txtSiteAdi}" Value="">
+                                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style>
+                                                    </TextBlock>
+                                                    <TextBox x:Name="txtSiteAdi" FontSize="8" BorderThickness="0" Background="Transparent" Padding="0,1,0,0" Margin="0,1,0,0" VerticalAlignment="Center"/>
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+
+                                        <!-- Alt Tablo (Pafta, Ada, vb.) -->
+                                        <Border Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                                            <UniformGrid Columns="6" Rows="2">
+                                                <!-- Başlıklar -->
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="3. Pafta no." FontSize="7" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="4. Ada no." FontSize="7" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="5. Parsel no." FontSize="7" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="6. Blok no." FontSize="7" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="7. Bağımsız&#x0a;bölüm no." TextAlignment="Center" FontSize="6" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,0,1" Background="#F4F4F4" Padding="2">
+                                                    <TextBlock Text="8. Yapı Kimlik No" FontSize="7" FontWeight="Bold" Foreground="#000080" HorizontalAlignment="Center"/>
+                                                </Border>
+
+                                                <!-- Değerler -->
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock x:Name="vPafta" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock x:Name="vAda" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock x:Name="vParsel" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock x:Name="vBlok" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock x:Name="vBagBol" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                                <Border BorderBrush="Transparent" BorderThickness="0" Padding="2">
+                                                    <TextBlock x:Name="vYKN" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                                                </Border>
+                                            </UniformGrid>
+                                        </Border>
+                                    </Grid>
+                                </Border>
+
+                                <!-- PANEL 2 -->
+                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,2,2,2">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.9*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="3">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Grid.Row="0" Text="9. Ruhsatın veriliş amacı" FontWeight="Bold" FontSize="8" Margin="0,0,0,2"/>
+                                                <UniformGrid Grid.Row="1" Columns="2">
+                                                    <CheckBox Content="1.Yeni yapı" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="10.Restorasyon" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="2.Yenileme" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="11.Güçlendirme" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="3.Yeniden" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="12.Kullanım değ(ş)" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="4.Ek Bina" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="13.Fosseptik" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="5.Kat ilavesi" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="14.Mekanik tesisat" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="6.İlave" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="15.Elektrik tesisat" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="7. İksaa" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="16.İsim değ(işk)" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="8.Tadilat" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="17.İstinat duvarı" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="9.Dolgu" FontSize="7" Margin="1"/>
+                                                    <CheckBox Content="18.Bahçe duvarı" FontSize="7" Margin="1"/>
+                                                </UniformGrid>
+                                            </Grid>
+                                        </Border>
+
+                                        <Grid Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!-- Satır 1 -->
+                                            <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="10. Ruhsatın onay tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/20__" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="11. Ruhsat no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val11" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="12. İlk ruhsat tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="13. İlk ruhsat no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val13" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Satır 2 -->
+                                            <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="14. İmar planı onay tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="15. İmar durum bel. tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="16. İmar durum bel. no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val16" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="1" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="17. Zemin etüdü onay tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Satır 3 -->
+                                            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="18. Parselasyon planı onay tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="2" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="19. Parselin kullanım amacı" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val19" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="2" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="20. Parselin alanı (m²)" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val20" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Satır 4 -->
+                                            <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="21. Yapı tescil belgesi veren kurum" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val21" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="3" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="22. Yapı tescil belgesi tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="3" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="23. Yapı tescil belgesi no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock x:Name="val23" Text="-" FontSize="8" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Satır 5 -->
+                                            <Border Grid.Row="4" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="24. ÇED raporu onay tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="4" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="25. Planlama kapsm başlama tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="4" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="26. Planlama kapsm bitme tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Row="4" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,0" Padding="2">
+                                                <StackPanel>
+                                                    <TextBlock Text="27. Ruhsatın geçerlilik tarihi" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="___/___/____" FontSize="7" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                        </Grid>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                            <!-- ================= PANEL 3, 4, 5: PAYDAŞ BİLGİLERİ ================= -->
+                            <Grid Grid.Row="2" Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- PANEL 3: YAPI SAHİBİNİN -->
+                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="2,2,1,2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                            <TextBlock Text="Yapı Sahibinin" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                        </Border>
+                                        <StackPanel Grid.Row="1" Margin="3">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel Grid.Column="0">
+                                                    <TextBlock Text="28. Adı soyadı, unvanı, TC Kimlik no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text=".........................................................................." FontSize="7" Margin="0,5,0,0"/>
+                                                    <TextBlock Text=".........................................................................." FontSize="7" Margin="0,2,0,0"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="1" Margin="5,0,0,0">
+                                                    <CheckBox Content="Özel" FontSize="6"/>
+                                                    <CheckBox Content="Kamu" FontSize="6"/>
+                                                    <CheckBox Content="Yabancı" FontSize="6"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <TextBlock Text="29. Bağlı olduğu vergi dairesi adı" FontSize="7" FontWeight="Bold" Margin="0,5,0,0"/>
+                                            <TextBlock Text="......................................................................................................" FontSize="7"/>
+                                            <TextBlock Text="30. Vergi Kimlik no." FontSize="7" FontWeight="Bold" Margin="0,5,0,0"/>
+                                            <TextBlock Text="| _ | _ | _ | _ | _ | _ | _ | _ | _ | _ |" FontSize="7"/>
+                                            <Grid Margin="0,5,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,1,1,0" Padding="2" Height="40">
+                                                    <TextBlock Text="31. Adres" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,1,0,0" Padding="2" Height="40">
+                                                    <TextBlock Text="32. İmza" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+
+                                <!-- PANEL 4: YAPI MÜTEAHHİDİNİN -->
+                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,2,1,2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                            <TextBlock Text="Yapı Müteahhidinin" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                        </Border>
+                                        <StackPanel Grid.Row="1" Margin="3">
+                                            <TextBlock Text="33. Adı soyadı, unvanı, TC Kimlik no." FontSize="7" FontWeight="Bold"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7" Margin="0,5,0,0"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7" Margin="0,2,0,0"/>
+                                            <TextBlock Text="34. Oda sicil no." FontSize="7" FontWeight="Bold" Margin="0,5,0,0"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7"/>
+                                            <Grid Margin="0,5,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel Grid.Column="0">
+                                                    <TextBlock Text="35. Bağlı olduğu vergi dairesi adı" FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="............................................." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="1">
+                                                    <TextBlock Text="36. Vergi Kimlik no." FontSize="7" FontWeight="Bold"/>
+                                                    <TextBlock Text="| _ | _ | _ | _ | _ | _ | _ | _ | _ | _ |" FontSize="7"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Margin="0,5,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel Grid.Column="0">
+                                                    <TextBlock Text="37. Sigorta sicil no." FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text="...................." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="1">
+                                                    <TextBlock Text="38. Sözleşme tarihi" FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text=".../.../......." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="2">
+                                                    <TextBlock Text="39. Sözleşme no." FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text="...................." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="3">
+                                                    <TextBlock Text="40. Yetki b. no" FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text="...................." FontSize="7"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Margin="0,15,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,1,1,0" Padding="2" Height="40">
+                                                    <TextBlock Text="41. İhale-eser adresi" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,1,0,0" Padding="2" Height="40">
+                                                    <TextBlock Text="42. İmza" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+
+                                <!-- PANEL 5: ŞANTİYE ŞEFİNİN -->
+                                <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1,2,2,2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                            <TextBlock Text="Şantiye Şefinin" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                        </Border>
+                                        <StackPanel Grid.Row="1" Margin="3">
+                                            <TextBlock Text="43. Adı soyadı, unvanı" FontSize="7" FontWeight="Bold"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7" Margin="0,5,0,0"/>
+                                            <TextBlock Text="44. TC Kimlik no." FontSize="7" FontWeight="Bold" Margin="0,5,0,0"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7"/>
+                                            <TextBlock Text="45. Oda sicil no." FontSize="7" FontWeight="Bold" Margin="0,5,0,0"/>
+                                            <TextBlock Text="........................................................................................................." FontSize="7"/>
+                                            <Grid Margin="0,5,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel Grid.Column="0">
+                                                    <TextBlock Text="46. Sigorta sicil no." FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text="........................." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="1">
+                                                    <TextBlock Text="47. Sözleşme tarihi" FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text=".../.../......." FontSize="7"/>
+                                                </StackPanel>
+                                                <StackPanel Grid.Column="2">
+                                                    <TextBlock Text="48. Sözleşme no." FontSize="6" FontWeight="Bold"/>
+                                                    <TextBlock Text="........................." FontSize="7"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Margin="0,15,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,1,1,0" Padding="2" Height="40">
+                                                    <TextBlock Text="49. Adres" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,1,0,0" Padding="2" Height="40">
+                                                    <TextBlock Text="50. İmza" FontSize="7" FontWeight="Bold"/>
+                                                </Border>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                            <!-- ================= PANEL 6 & 7: ÖZELLİKLER TABLOLARI ================= -->
+                            <Grid Grid.Row="3" Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- PANEL 6 -->
+                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="2,2,1,2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                            <TextBlock Text="Form Düzenlenen Kısımla İlgili Özellikler" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                        </Border>
+
+                                        <!-- Burada StackPanel eksikti, eklendi (HATA ÇÖZÜMÜ) -->
+                                        <StackPanel Grid.Row="1">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2*"/>
+                                                    <ColumnDefinition Width="1*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="25"/>
+                                                    <RowDefinition Height="25"/>
+                                                    <RowDefinition Height="25"/>
+                                                    <RowDefinition Height="25"/>
+                                                    <RowDefinition Height="25"/>
+                                                    <RowDefinition Height="25"/>
+                                                </Grid.RowDefinitions>
+
+                                                <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="51. Kullanım amacına göre yapının bağımsız bölümü ile ortak alanları" FontSize="6" FontWeight="Bold" TextWrapping="Wrap"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="52. Bağımsız bölüm sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="53. Tadilat miktarı / ilave tadilat alanı [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <TextBlock Text="54. Toplam yüzölçümü [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap"/>
+                                                </Border>
+
+                                                <Border Grid.Row="1" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="1" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="1" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="1" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                                <Border Grid.Row="2" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="2" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="2" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="2" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                                <Border Grid.Row="3" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="3" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="3" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="3" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                                <Border Grid.Row="4" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="4" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="4" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="4" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                                <Border Grid.Row="5" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="5" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="5" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                                <Border Grid.Row="5" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                                <Border Grid.Row="6" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                                <Border Grid.Row="6" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                                <Border Grid.Row="6" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                                <Border Grid.Row="6" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,0,0"/>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+
+                                <!-- PANEL 7 -->
+                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,2,2,2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                            <TextBlock Text="Yapı İle İlgili Özellikler" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                        </Border>
+                                        <StackPanel Grid.Row="1">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="55. Benzer yapı sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="56. Yapıda bağımsız bölüm sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="57. Yapıda konut birimi (daire) sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="58. Yapının taban alanı [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="4" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <TextBlock Text="59. Yapı inşaat alanı [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+
+                                                <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="60. Toplam yapı sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="61. Toplam bağımsız bölüm sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="62. Toplam konut birimi (daire) sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="63. Toplam taban alanı [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="4" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <TextBlock Text="64. Toplam yapı inşaat alanı [m²]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                            </Grid>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="65. Yapının yol kotu altı kat sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="66. Yapının yol kotu üstü kat sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="67. Yapının toplam kat sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <TextBlock Text="68. İlave kat sayısı" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+
+                                                <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="69. Yapının yol kotu altı yüksekliği [m]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="70. Yapının yol kotu üstü yüksekliği [m]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                    <TextBlock Text="71. Yapının toplam yüksekliği [m]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Row="1" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <TextBlock Text="72. İlave kat yüksekliği [m]" FontSize="6" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                            </Grid>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="0.8*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                    <ColumnDefinition Width="1.2*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="73. Yapı sınıfı" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="74. Yapı grubu" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="75. İlave m²" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="76. 1 m² maliyeti [TL]" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="4" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="77. Toplam maliyeti [TL]" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="5" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="78. Yapının arsa değeri [TL]" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="6" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                    <TextBlock Text="79. Arsa dahil yapının maliyeti [TL]" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                                <Border Grid.Column="7" BorderBrush="Black" BorderThickness="0,0,0,0" Padding="2">
+                                                    <TextBlock Text="80. Form düzenleme kısmı maliyeti [TL]" FontSize="5" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                                </Border>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                            <!-- ================= PANEL 8: YAPININ TEKNİK ÖZELLİKLERİ ================= -->
+                            <Border Grid.Row="4" BorderBrush="Black" BorderThickness="2" Margin="0,0,0,4">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                        <TextBlock Text="Yapının Teknik Özellikleri" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                    </Border>
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2.2*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1.2*"/>
+                                            <ColumnDefinition Width="2.5*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0">
+                                            <StackPanel>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <StackPanel>
+                                                        <TextBlock Text="81. Isıtma Sistemi" FontSize="7" FontWeight="Bold"/>
+                                                        <WrapPanel Margin="0,2,0,0">
+                                                            <CheckBox Content="1. Merkezi kalorifer" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="2. Kat kaloriferi" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="3. Soba" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="4. Klima" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="5. Doğal gaz sobası" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="6. ....................." FontSize="6" Margin="0,0,5,0"/>
+                                                        </WrapPanel>
+                                                    </StackPanel>
+                                                </Border>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <StackPanel>
+                                                        <TextBlock Text="82. Isıtma Amaçlı Kullanılan Yakıt Cinsi" FontSize="7" FontWeight="Bold"/>
+                                                        <WrapPanel Margin="0,2,0,0">
+                                                            <CheckBox Content="1. Katı Yakıt" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="2. Fuel-oil" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="3. Doğalgaz" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="4. LPG" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="5. Elektrik" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="6. Güneş" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="7. Termal" FontSize="6" Margin="0,0,5,0"/>
+                                                            <CheckBox Content="8. Rüzgar" FontSize="6" Margin="0,0,5,0"/>
+                                                        </WrapPanel>
+                                                    </StackPanel>
+                                                </Border>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="83. Sıcak Su Temin Şekli" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Termosifon" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. Şofben" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="3. Güneş k." FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="4. Kombi" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="5. Müşterek" FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                    <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="84. Sıcak Su Yakıt Cinsi" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Doğalgaz" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. LPG" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="3. Fuel-oil" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="4. Elektrik" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="5. Katı Yakıt" FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                </Grid>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="85. İçme Suyu" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Şehir suyu" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. Kuyu suyu" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="3. Pınar suyu" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="4. Taşıma suyu" FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                    <Border Grid.Column="1" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="86. Atık su" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Kanalizasyon" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. Fosseptik" FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                </Grid>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="3">
+                                            <StackPanel>
+                                                <TextBlock Text="87. Tesisatlar" FontSize="7" FontWeight="Bold" Margin="0,0,0,2"/>
+                                                <CheckBox Content="1. Anten" FontSize="6"/>
+                                                <CheckBox Content="2. Havalandırma" FontSize="6"/>
+                                                <CheckBox Content="3. Doğalgaz" FontSize="6"/>
+                                                <CheckBox Content="4. Elektrik" FontSize="6"/>
+                                                <CheckBox Content="5. Haberleşme" FontSize="6"/>
+                                                <CheckBox Content="6. Pis su" FontSize="6"/>
+                                                <CheckBox Content="7. Temiz su" FontSize="6"/>
+                                                <CheckBox Content="8. Telefon" FontSize="6"/>
+                                                <CheckBox Content="9. Jeneratör" FontSize="6"/>
+                                                <CheckBox Content="10. Paratoner" FontSize="6"/>
+                                                <CheckBox Content="11. Yangın tesisatı" FontSize="6"/>
+                                                <CheckBox Content="12. .................." FontSize="6"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,0" Padding="3">
+                                            <StackPanel>
+                                                <TextBlock Text="88. Ortak Kullanım Alanları" FontSize="7" FontWeight="Bold" Margin="0,0,0,2"/>
+                                                <CheckBox Content="1. Asansör" FontSize="6"/>
+                                                <CheckBox Content="2. Bekçi kulübesi" FontSize="6"/>
+                                                <CheckBox Content="3. Açık otopark" FontSize="6"/>
+                                                <CheckBox Content="4. Kapalı otopark" FontSize="6"/>
+                                                <CheckBox Content="5. Kapıcı dairesi" FontSize="6"/>
+                                                <CheckBox Content="6. Kömürlük" FontSize="6"/>
+                                                <CheckBox Content="7. Ortak depo" FontSize="6"/>
+                                                <CheckBox Content="8. Sığınak" FontSize="6"/>
+                                                <CheckBox Content="9. Su deposu" FontSize="6"/>
+                                                <CheckBox Content="10. Yangın merdiveni" FontSize="6"/>
+                                                <CheckBox Content="11. Yüzme havuzu" FontSize="6"/>
+                                                <CheckBox Content="12. .................." FontSize="6"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="3">
+                                            <StackPanel>
+                                                <Border BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                    <StackPanel>
+                                                        <TextBlock Text="89. Yapının Taşıyıcı Sistemi" FontSize="7" FontWeight="Bold" Margin="0,0,0,2"/>
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Grid.Column="0">
+                                                                <CheckBox Content="1. İskelet [Karkas]" FontSize="6" FontWeight="SemiBold"/>
+                                                                <CheckBox Content="2. Yığma [Kagir]" FontSize="6" FontWeight="SemiBold" Margin="0,15,0,0"/>
+                                                                <CheckBox Content="6. ................." FontSize="6" FontWeight="SemiBold" RenderTransformOrigin="0.628,0.483" Height="54" Width="74">
+                                                                    <CheckBox.RenderTransform>
+                                                                        <TransformGroup>
+                                                                            <ScaleTransform/>
+                                                                            <SkewTransform AngleX="0.813"/>
+                                                                            <RotateTransform/>
+                                                                            <TranslateTransform X="-0.33"/>
+                                                                        </TransformGroup>
+                                                                    </CheckBox.RenderTransform>
+                                                                </CheckBox>
+                                                            </StackPanel>
+                                                            <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                                                <CheckBox Content="1.1. Betonarme" FontSize="6"/>
+                                                                <CheckBox Content="1.2. Ahşap" FontSize="6"/>
+                                                                <CheckBox Content="1.3. Çelik" FontSize="6"/>
+                                                            </StackPanel>
+                                                            <StackPanel Grid.Column="2" Margin="10,0,0,0">
+                                                                <CheckBox Content="1.1.1. Çerçeveli sistem" FontSize="6"/>
+                                                                <CheckBox Content="1.1.2. Perdeli sistem" FontSize="6"/>
+                                                                <CheckBox Content="1.1.3. Çerçeveli-Perdeli" FontSize="6"/>
+                                                                <WrapPanel Margin="0,15,0,0">
+                                                                    <CheckBox Content="3. Prefabrik" FontSize="6" Margin="0,0,5,0"/>
+                                                                    <CheckBox Content="4. Yarı prefabrik" FontSize="6" Margin="0,0,5,0"/>
+                                                                    <CheckBox Content="5. Karma" FontSize="6"/>
+                                                                </WrapPanel>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </StackPanel>
+                                                </Border>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="90. Duvar Dolgu Maddesi Cinsi" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Briket" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. Tuğla" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="3. Taş" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="4. Ahşap" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="5. Kerpiç" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="6. Gazbeton" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="7. Hafif panel" FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                    <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                                        <StackPanel>
+                                                            <TextBlock Text="91. Döşeme" FontSize="7" FontWeight="Bold"/>
+                                                            <WrapPanel>
+                                                                <CheckBox Content="1. Plak kiriş" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="2. Mantar/Dişli" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="3. Asmolen" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="4. Ahşap" FontSize="6" Margin="0,0,5,0"/>
+                                                                <CheckBox Content="5. Hazır yapı el." FontSize="6" Margin="0,0,5,0"/>
+                                                            </WrapPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                </Grid>
+                                                <Border Padding="3">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="92. Parsel Dışı Otopark" FontSize="7" FontWeight="Bold" Margin="0,0,10,0"/>
+                                                        <CheckBox Content="1. Var" FontSize="6" Margin="0,0,10,0"/>
+                                                        <CheckBox Content="2. Yok" FontSize="6"/>
+                                                    </StackPanel>
+                                                </Border>
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+
+                            <!-- ================= PANEL 9: YAPI PROJELERİ ================= -->
+                            <Border Grid.Row="5" BorderBrush="Black" BorderThickness="2" Margin="0,0,0,4">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Row="0" Background="#CCFFFF" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="3">
+                                        <TextBlock Text="Yapı Projeleri" FontWeight="Bold" FontSize="10" Foreground="#003366"/>
+                                    </Border>
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="20"/>
+                                            <ColumnDefinition Width="2*"/>
+                                            <ColumnDefinition Width="1.5*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                        </Grid.RowDefinitions>
+
+                                        <!-- Başlık Satırı -->
+                                        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                            <TextBlock Text="93. Onay tarihi" FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+                                        <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2"/>
+                                        <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                            <TextBlock Text="94. Adı soyadı" FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+                                        <Border Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                            <TextBlock Text="95. TC Kimlik no." FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+                                        <Border Grid.Row="0" Grid.Column="4" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                            <TextBlock Text="96. Oda sicil no." FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+                                        <Border Grid.Row="0" Grid.Column="5" BorderBrush="Black" BorderThickness="0,0,1,1" Padding="2">
+                                            <TextBlock Text="97. Adresi" FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+                                        <Border Grid.Row="0" Grid.Column="6" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="2">
+                                            <TextBlock Text="98. İmza" FontSize="6" FontWeight="Bold"/>
+                                        </Border>
+
+                                        <!-- Dikey Yazı -->
+                                        <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="7" BorderBrush="Black" BorderThickness="0,0,1,0">
+                                            <TextBlock Text="PROJE MÜELLİFİNİN" FontSize="6" FontWeight="Bold" Foreground="Blue" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock.LayoutTransform>
+                                                    <RotateTransform Angle="-90"/>
+                                                </TextBlock.LayoutTransform>
+                                            </TextBlock>
+                                        </Border>
+
+                                        <!-- Satır 1: Mimari -->
+                                        <Border Grid.Row="1" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text="Mimari" FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="1" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="1" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="1" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="1" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="1" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 2: Statik -->
+                                        <Border Grid.Row="2" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text="Statik" FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="2" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="2" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="2" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="2" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="2" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 3: Elektrik -->
+                                        <Border Grid.Row="3" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text="Elektrik" FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="3" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="3" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="3" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="3" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="3" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 4: Mekanik Tesisat -->
+                                        <Border Grid.Row="4" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text="Mekanik Tesisat" FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="4" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="4" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="4" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="4" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="4" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 5: Boş -->
+                                        <Border Grid.Row="5" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text=" " FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="5" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="5" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="5" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="5" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="5" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 6: Boş -->
+                                        <Border Grid.Row="6" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,1" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text=" " FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="6" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="6" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="6" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="6" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1"/>
+                                        <Border Grid.Row="6" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,1"/>
+                                        <!-- Satır 7: Boş (Alt çizgi yok) -->
+                                        <Border Grid.Row="7" Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,0" Padding="2">
+                                            <StackPanel>
+                                                <TextBlock Text=" " FontSize="5" FontWeight="Bold"/>
+                                                <TextBlock Text="___/___/20__" FontSize="5" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="7" Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                        <Border Grid.Row="7" Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,0">
+                                            <TextBlock Text="| | | | | | | | | | |" FontSize="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                        </Border>
+                                        <Border Grid.Row="7" Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                        <Border Grid.Row="7" Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
+                                        <Border Grid.Row="7" Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,0,0"/>
+
+                                    </Grid>
+                                </Grid>
+                            </Border>
+
+                        </Grid>
+                    </Border>
+                </Viewbox>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

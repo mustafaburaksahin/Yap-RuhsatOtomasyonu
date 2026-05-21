@@ -1,0 +1,49 @@
+﻿<Window x:Class="YapıRuhsatOtomasyonu.YapiBilgileri.DosyaListesi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Name="DosyaWindow"
+        Title="Teknik Dosya Arşivi" Height="550" Width="1000"
+        WindowStartupLocation="CenterOwner" Background="#F5F5F5">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,0,0,15">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Yapıya Ait Teknik Dosyalar" FontSize="22" FontWeight="Bold" Foreground="#FF9800"/>
+                <TextBlock x:Name="txtYapiId" Text=" (ID):" FontSize="22" FontWeight="Bold" Foreground="#FF9800" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <DataGrid x:Name="dgDosyalar" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" 
+                  Background="White" CanUserAddRows="False" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Dosya Tipi" Binding="{Binding DosyaTipAd}" Width="200"/>
+                <DataGridTextColumn Header="Açıklama" Binding="{Binding Aciklama}" Width="2*"/>
+                <DataGridTextColumn Header="Dosya Adı" Binding="{Binding DosyaYolu}" Width="1.5*"/>
+                <DataGridTextColumn Header="Kayıt Tarihi" Binding="{Binding KayitTarihi}" Width="150"/>
+
+                <DataGridTemplateColumn Header="İşlemler" Width="180">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="GÖR" Click="BtnDosyaAc_Click" 
+                                        Style="{StaticResource MaterialDesignFlatButton}" Margin="0,0,5,0"/>
+
+                                <Button Content="SİL" 
+                                        Click="BtnDosyaSil_Click" 
+                                        Foreground="#D32F2F" 
+                                        Style="{StaticResource MaterialDesignFlatButton}"
+                                        Visibility="{Binding AdminVisibility, ElementName=DosyaWindow}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
